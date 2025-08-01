@@ -20,7 +20,7 @@ WEBAPP_PORT = int(os.getenv("PORT", default=5000))
 
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
-    await message.answer(👋 077-Cypet-ке қош келдің!
+    await message.answer("👋 077-Cypet-ке қош келдің!
 Суреттерді жасайтын сенің жеке көмекшің 🎨
 
 📸 Қиялыңды сипатта — мен соған сай сурет жасаймын.
@@ -63,3 +63,4 @@ if __name__ == '__main__':
         host=WEBAPP_HOST,
         port=WEBAPP_PORT,
     )
+
