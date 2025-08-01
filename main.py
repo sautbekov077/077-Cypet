@@ -55,7 +55,6 @@ async def main():
     app = web.Application()
     dp.startup.register(on_startup)
     dp.shutdown.register(on_shutdown)
-    dp.include_router(dp)
     setup_application(app, dp, bot=bot)
     return app
 
