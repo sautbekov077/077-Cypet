@@ -1,7 +1,6 @@
 import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import InputFile
-from aiogram.dispatcher.webhook import get_new_configured_app
 from aiogram.utils.executor import start_webhook
 from image_generator import generate_image
 from dotenv import load_dotenv
@@ -66,5 +65,6 @@ if __name__ == '__main__':
         host=WEBAPP_HOST,
         port=WEBAPP_PORT,
     )
+
 
 
